@@ -1,5 +1,5 @@
 import numpy as np
-Marks=input("Enter the marks:")
+Marks=input("Enter the marks separated by space:")
 Marks= np.array(Marks.split(), dtype= int)
 
 Mean= np.mean(Marks)
@@ -11,7 +11,7 @@ print("Maximum of marks :",Maximum)
 Minimum = np.min(Marks)
 print("Minimum of marks :",Minimum)
 
-print("Topper:",Maximum)
+print("Topper Marks:",Maximum)
 
 Above_avg = Marks[Marks > Mean]
-print("Above average student are:",Above_avg)
+print("Above average marks:",Above_avg)
